@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="event.css">
+    <script src = "event.js"></script>
+</head>
+<body>
+    <form name = "eventForm" onsubmit="saveEvent()">
+        <div id ="container">
+            <h1 id = "header">EVENT FORM</h1>
+            <label>Event Type: 
+                <select id ="type" required>
+                    <option disabled selected>Choose one</option>
+                    <option>AAAAAAAAAAAAA</option>
+                    <option>BBBBBBBBBBBBB</option>
+                    <option>CCCCCCCCCCCCC</option>
+                    <option>DDDDDDDDDDDDD</option>
+                </select>
+            </label><br><br>
+            <label>Event Title: <input id = "title" type = "text" required></label><br><br>
+            <label>Event Dates: <input id = "date1" type = "date" required> &nbsp;to&nbsp; <input id = "date2" type = "date" required></label><br><br>
+            <label>Posting Date: <input id = "date3" type = "date" required></label><br><br><br>
+        
+            <input type="checkbox"><label> Is  Registration Required?</label><br><br>
+            <input type="checkbox"><label> Is  this event associated with any Family Programs?</label><br><br>
+            <input type="checkbox"><label> Upon Registration Completion, Are Users to receive an Auto Generated Email?</label><br><br>
+            <input type="checkbox"><label> Is  There a Point of Contact?</label><br><br>
+            <input type="checkbox"><label> Is  There a Hosting Command Point of Contact?</label><br><br><br><br>
+
+            <input id = "save" type = "submit" value = "Save">&nbsp;
+            <input id = "cancel" type = "button" value = "Cancel" onclick ="cancelEvent()">
+         </div>
+    </form>
+</body>
+</html>
